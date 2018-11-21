@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+restaurant_attributes = [
+  { name: "Alicheur" , address: "Oberkampf", category: "chinese" },
+  { name: "Pitaya" , address: "Oberkampf", category: "italian" },
+  { name: "Dyonisos" , address: "Oberkampf", category: "japanese" },
+  { name: "Le petit phenicien" , address: "Oberkampf", category: "french" },
+  { name: "Boulangerie" , address: "Oberkampf", category: "belgian" },
+  { name: "McDo" , address: "Oberkampf", category: "japanese" },
+  { name: "Casino" , address: "Oberkampf", category: "chinese" }
+
+]
+
+restaurant_attributes.each { |attr| Restaurant.create!(attr)}

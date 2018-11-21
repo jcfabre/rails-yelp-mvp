@@ -1,0 +1,14 @@
+<div class="container">
+  <h1> New Restaurant </h1>
+  <div class="row">
+    <div class="col-12 col-sm-4">
+      <%= simple_form_for @restaurant do |f| %>
+        <%= f.input :name, label: "Label: " %>
+        <%= f.input :address, address: "Address: " %>
+        <%= f.input :category, category: "Category: " %>
+        <%= f.input :phone_number, phone_number: "Phone Number: "%>
+        <%= f.submit "Create a restaurant", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
